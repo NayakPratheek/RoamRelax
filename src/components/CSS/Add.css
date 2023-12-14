@@ -1,0 +1,22 @@
+.addons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.simple img {
+    width: 270px;
+    height: 170px;
+}
+
+.Value h3 {
+    margin-left: 70px;
+}
+
+.Value p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    text-align: center;
+}

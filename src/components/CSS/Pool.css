@@ -1,0 +1,96 @@
+.hotels {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.hotels1 {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px;
+}
+
+.headline h2 {
+    margin-left: 60px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    flex: none;
+}
+
+.card {
+    width: 300px;
+    margin: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.449);
+}
+
+.card:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: .2s;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.hotel-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.location {
+    font-size: 16px;
+    color: #27ae60;
+    margin-bottom: 10px;
+    align-items: center;
+    text-align: center;
+}
+
+.button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    text-align: center;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #5261c3;
+}
+
+.extra {
+    display: flex;
+    justify-content: center;
+}
+
+.AmenitiesSection_item__sB19R {
+    display: flex;
+    align-items: center;
+    font-size: var(--font-size-14);
+    font-weight: var(--font-weight-700);
+    padding: 10px;
+    justify-content: center;
+}
