@@ -14,9 +14,11 @@ function App() {
                 <Routes>
                     <Route exact path='/' element={<Home />}></Route>
                     <Route exact path='/login' element={<Login />}></Route>
-                    {/* <Route exact path='/' element={<Home />}></Route>
-                    <Route exact path='/' element={<Home />}></Route> */}
                 </Routes>
+                <Pool />
+                <Hotels />
+                <Add />
+                <Footer />
             </BrowserRouter>
         </>
     )

@@ -13,7 +13,7 @@
 }
 
 .Value p {
-    display: block;
+    /* display: block; */
     margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 0px;
