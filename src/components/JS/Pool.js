@@ -1,7 +1,13 @@
 import "../CSS/Pool.css"
-
+import { Routes, Route, Link, useNavigate } from 'react-router-dom';
+import Confirm from '../JS/Confirm.jsx'
 
 function Pool() {
+    const navigate = useNavigate();
+
+    function redirectToPage(page) {
+        navigate(`/confirm`);
+    }
     return (
         <>
             <div class="hotels" id="services">
@@ -11,15 +17,15 @@ function Pool() {
                 <div class="cards">
                     <div class="card">
                         <div class="card-content">
-                            <img src="https://imgcy.trivago.com/c_lfill,d_dummy.jpeg,e_sharpen:60,f_auto,h_240,q_auto,w_320//uploadimages/25/01/25012206.jpeg"
+                            <img src="https://cf.bstatic.com/xdata/images/hotel/270x200/315001454.webp?k=2033555b2b95285e0c5400e320844ef8907193d021f14b59e965262259eabaa4&o="
                                 alt="" />
-                            <div class="hotel-name">Hotel Riu Garoe</div>
+                            <div class="hotel-name">VAMA Retreats</div>
                             <div class="location"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                                 viewBox="0 0 24 24" class="pointer-events-none max-h-full max-w-full">
                                 <path
                                     d="M18 8.23a6 6 0 00-11.9 0A6.49 6.49 0 006 9a5.79 5.79 0 00.38 2.09l4.75 9.4a1 1 0 001.74 0l4.75-9.4A5.79 5.79 0 0018 9a6.49 6.49 0 000-.77zM12 13a4 4 0 114-4 4 4 0 01-4 4z"
                                     fill="currentColor"></path>
-                            </svg>Barcelona</div>
+                            </svg>Bangalore</div>
                             <div class="extra">
                                 <li class="AmenitiesSection_item__sB19R"><span
                                     class="leading-none inline-flex Icon_m__3y0iQ transform AmenitiesSection_icon__WSUCZ"
@@ -48,20 +54,20 @@ function Pool() {
                                         </g>
                                     </svg></span><span>Spa</span></li>
                             </div>
-                            <a href="confirm.html" class="button">Book Now</a>
+                            <button className="button" onClick={() => redirectToPage('confirm')}>Book Now</button>
                         </div>
                     </div>
                     <div class="card">
                         <div class="card-content">
-                            <img src="https://imgcy.trivago.com/c_lfill,d_dummy.jpeg,e_sharpen:60,f_auto,h_225,q_auto,w_225/partnerimages/16/74/1674349190.jpeg"
+                            <img src="https://cf.bstatic.com/xdata/images/hotel/270x200/57246692.webp?k=dfb9e10d6f288e01b7ecb293e0b5d0d2b2d34afb01ef1efd2406d875d5f1e2b2&o="
                                 alt="" />
-                            <div class="hotel-name">Helios Benidorm</div>
+                            <div class="hotel-name">Royal Orchid</div>
                             <div class="location"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                                 viewBox="0 0 24 24" class="pointer-events-none max-h-full max-w-full">
                                 <path
                                     d="M18 8.23a6 6 0 00-11.9 0A6.49 6.49 0 006 9a5.79 5.79 0 00.38 2.09l4.75 9.4a1 1 0 001.74 0l4.75-9.4A5.79 5.79 0 0018 9a6.49 6.49 0 000-.77zM12 13a4 4 0 114-4 4 4 0 01-4 4z"
                                     fill="currentColor"></path>
-                            </svg>Benidorme</div>
+                            </svg>Bangalore</div>
                             <div class="extra">
                                 <li class="AmenitiesSection_item__sB19R"><span
                                     class="leading-none inline-flex Icon_m__3y0iQ transform AmenitiesSection_icon__WSUCZ"
@@ -90,20 +96,20 @@ function Pool() {
                                         </g>
                                     </svg></span><span>Spa</span></li>
                             </div>
-                            <a href="confirm.html" class="button">Book Now</a>
+                            <button className="button" onClick={() => redirectToPage('confirm')}>Book Now</button>
                         </div>
                     </div>
                     <div class="card">
                         <div class="card-content">
-                            <img src="https://imgcy.trivago.com/c_lfill,d_dummy.jpeg,e_sharpen:60,f_auto,h_240,q_auto,w_320//uploadimages/47/25/47258172.jpeg"
+                            <img src="https://cf.bstatic.com/xdata/images/hotel/square600/506337650.webp?k=178642c7bb3e3b10b5254f9882da91d1831f99b2852a5c21bcf0e19cf0503c32&o="
                                 alt="" />
-                            <div class="hotel-name">Yurrban Passage Hotel</div>
+                            <div class="hotel-name">Seascape</div>
                             <div class="location"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                                 viewBox="0 0 24 24" class="pointer-events-none max-h-full max-w-full">
                                 <path
                                     d="M18 8.23a6 6 0 00-11.9 0A6.49 6.49 0 006 9a5.79 5.79 0 00.38 2.09l4.75 9.4a1 1 0 001.74 0l4.75-9.4A5.79 5.79 0 0018 9a6.49 6.49 0 000-.77zM12 13a4 4 0 114-4 4 4 0 01-4 4z"
                                     fill="currentColor"></path>
-                            </svg>Madrid</div>
+                            </svg>Mangalore</div>
                             <div class="extra">
                                 <li class="AmenitiesSection_item__sB19R"><span
                                     class="leading-none inline-flex Icon_m__3y0iQ transform AmenitiesSection_icon__WSUCZ"
@@ -116,20 +122,20 @@ function Pool() {
                                         </g>
                                     </svg></span><span>Pool</span></li>
                             </div>
-                            <a href="confirm.html" class="button">Book Now</a>
+                            <button className="button" onClick={() => redirectToPage('confirm')}>Book Now</button>
                         </div>
                     </div>
                     <div class="card">
                         <div class="card-content">
-                            <img src="https://imgcy.trivago.com/c_lfill,d_dummy.jpeg,e_sharpen:60,f_auto,h_240,q_auto,w_320//partnerimages/16/61/1661362070.jpeg"
+                            <img src="https://cf.bstatic.com/xdata/images/hotel/square600/425356222.webp?k=3dd05126e0250c1cb9527a2617ad3accd4caa5a1b5bacc9540d21ba61b696cd8&o="
                                 alt="" />
-                            <div class="hotel-name">Marbella Club Hotel</div>
+                            <div class="hotel-name">Reunion Ocean Royal</div>
                             <div class="location"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                                 viewBox="0 0 24 24" class="pointer-events-none max-h-full max-w-full">
                                 <path
                                     d="M18 8.23a6 6 0 00-11.9 0A6.49 6.49 0 006 9a5.79 5.79 0 00.38 2.09l4.75 9.4a1 1 0 001.74 0l4.75-9.4A5.79 5.79 0 0018 9a6.49 6.49 0 000-.77zM12 13a4 4 0 114-4 4 4 0 01-4 4z"
                                     fill="currentColor"></path>
-                            </svg>Marbella</div>
+                            </svg>Udupi</div>
                             <div class="extra">
                                 <li class="AmenitiesSection_item__sB19R"><span
                                     class="leading-none inline-flex Icon_m__3y0iQ transform AmenitiesSection_icon__WSUCZ"
@@ -142,9 +148,12 @@ function Pool() {
                                         </g>
                                     </svg></span><span>Pool</span></li>
                             </div>
-                            <a href="confirm.html" class="button">Book Now</a>
+                            <button className="button" onClick={() => redirectToPage('confirm')}>Book Now</button>
                         </div>
                     </div>
+                    <Routes>
+                        <Route path='/confirm' element={<Confirm />} />
+                    </Routes>
                 </div>
             </div>
         </>

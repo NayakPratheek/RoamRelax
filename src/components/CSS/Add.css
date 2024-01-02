@@ -1,6 +1,9 @@
 .addons {
     display: flex;
     justify-content: space-evenly;
+    animation: floatAnimation 3s infinite alternate ease-in-out;
+    margin-top: 35px;
+    cursor: pointer;
 }
 
 .simple img {
@@ -19,4 +22,19 @@
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     text-align: center;
+}
+
+.add_img img {
+    max-width: 100%;
+    height: auto;
+}
+
+@keyframes floatAnimation {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-20px);
+    }
 }

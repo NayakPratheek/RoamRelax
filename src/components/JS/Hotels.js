@@ -1,6 +1,28 @@
-import '../CSS/Hotels.css'
+import React from 'react';
+import { Routes, Route, Link, useNavigate } from 'react-router-dom';
+import Mumbai from '../JS/Mumbai.jsx';
+import Mangalore from '../JS/Mangalore.jsx';
+import Bangalore from '../JS/Bangalore.jsx';
+import Udupi from '../JS/Udupi.jsx';
+import '../CSS/Hotels.css';
+
 
 function Hotels() {
+    const navigate = useNavigate();
+
+    function redirectToPage(page) {
+        navigate(`/mumbai`);
+    }
+    function redirectToPage1(page) {
+        navigate(`/mangalore`);
+    }
+    function redirectToPage2(page) {
+        navigate(`/bangalore`);
+    }
+    function redirectToPage3(page) {
+        navigate(`/udupi`);
+    }
+
     return (
         <>
             <div class="hotels1">
@@ -33,7 +55,7 @@ function Hotels() {
                                     </span>
                                 </div>
                             </div>
-                            <a href="mumbai.html" class="button">View More</a>
+                            <button className="button" onClick={() => redirectToPage('mumbai')}>View More</button>
                         </div>
                     </div>
                     <div class="card">
@@ -60,7 +82,7 @@ function Hotels() {
                                     </span>
                                 </div>
                             </div>
-                            <a href="mangalore.html" class="button">View More</a>
+                            <button className="button" onClick={() => redirectToPage1('mangalore')}>View More</button>
                         </div>
                     </div>
                     <div class="card">
@@ -87,7 +109,7 @@ function Hotels() {
                                     </span>
                                 </div>
                             </div>
-                            <a href="bangalore.html" class="button">View More</a>
+                            <button className="button" onClick={() => redirectToPage2('bangalore')}>View More</button>
                         </div>
                     </div>
                     <div class="card">
@@ -115,9 +137,15 @@ function Hotels() {
                                     </span>
                                 </div>
                             </div>
-                            <a href="udupi.html" class="button">View More</a>
+                            <button className="button" onClick={() => redirectToPage3('udupi')}>View More</button>
                         </div>
                     </div>
+                    <Routes>
+                        <Route path='/mumbai' element={<Mumbai />} />
+                        <Route path='/mangalore' element={<Mangalore />} />
+                        <Route path='/bangalore' element={<Bangalore />} />
+                        <Route path='/udupi' element={<Udupi />} />
+                    </Routes>
                 </div>
             </div>
 

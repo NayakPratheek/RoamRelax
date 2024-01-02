@@ -3,42 +3,6 @@ import "../CSS/Locs.css";
 function Mangalore() {
   return (
     <>
-      <div class="navbar">
-        <div class="logo">
-          <a href="/public/index.html">
-            <img src="/images/logo.png" alt="Logo" />
-          </a>
-          <h6>
-            <span id="roam">Roam</span>
-            <span id="relax"></span>Relax
-          </h6>
-        </div>
-        <div class="menu">
-          <ul>
-            <li>
-              <a href="/public/index.html">Home</a>
-            </li>
-            <li>
-              <a href="/public/index.html">About</a>
-            </li>
-            <li>
-              <a href="/public/index.html">Services</a>
-            </li>
-            <li>
-              <a href="/public/index.html">Offers</a>
-            </li>
-            <li>
-              <a href="/public/index.html">Contact</a>
-            </li>
-          </ul>
-        </div>
-        <div class="log">
-          <button>
-            <a href="/public/login.html">Login/Sign Up</a>
-          </button>
-        </div>
-      </div>
-
       <div class="flex-container">
         <div class="card">
           <div class="card-content">
@@ -416,3 +380,5 @@ function Mangalore() {
     </>
   );
 }
+
+export default Mangalore;

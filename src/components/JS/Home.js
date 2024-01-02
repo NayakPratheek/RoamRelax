@@ -2,6 +2,13 @@ import React from 'react';
 import '../CSS/Home.css'
 import Typed from 'typed.js';
 import { Link } from 'react-router-dom';
+import Navbar from '../JS/Navbar.js';
+import Pool from '../JS/Pool.js';
+import Hotels from '../JS/Hotels.js';
+import Add from '../JS/Add.js';
+import Footer from '../JS/Footer.js';
+import Login from '../JS/Login.js';
+import Signup from '../JS/Signup.js';
 function Home() {
     const el = React.useRef(null);
     React.useEffect(() => {
@@ -33,6 +40,7 @@ function Home() {
     }, []);
     return (
         <>
+
             <div class="loc">
                 <div class="search">
                     <div class="dest">
@@ -73,6 +81,16 @@ function Home() {
                 </div>
             </div>
 
+            <Add />
+
+
+
+            <div class="adds">
+                <img src="https://i.pinimg.com/564x/6c/88/6a/6c886a58955b62b80b29d29a69432904.jpg" alt='hi' />
+                <h3><span ref={e2} /></h3>
+            </div>
+            <Pool />
+            <Hotels />
             <div class="add">
                 <div class="addLogo">
                     <Link to="https://www.oyorooms.com/">
@@ -99,12 +117,7 @@ function Home() {
                     </Link>
                 </div>
             </div>
-
-
-            <div class="adds">
-                <img src="https://i.pinimg.com/564x/6c/88/6a/6c886a58955b62b80b29d29a69432904.jpg" alt='hi' />
-                <h3><span ref={e2} /></h3>
-            </div>
+            <Footer />
         </>
     );
 }
