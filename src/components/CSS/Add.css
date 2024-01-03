@@ -1,7 +1,7 @@
 .addons {
     display: flex;
     justify-content: space-evenly;
-    animation: floatAnimation 3s infinite alternate ease-in-out;
+    animation: floatAnimation 2s infinite alternate ease-in-out;
     margin-top: 35px;
     cursor: pointer;
 }
@@ -35,6 +35,6 @@
     }
 
     to {
-        transform: translateY(-20px);
+        transform: translateY(-30px);
     }
 }
