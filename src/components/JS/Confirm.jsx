@@ -1,16 +1,24 @@
 import "../CSS/Confirm.css";
+import Footer from "./Footer";
 
 function Confirm() {
   return (
     <>
-      <header>
-        <h1>Hotel Booking Form</h1>
-      </header>
-
       <section>
+        <header>
+          <h1>Hotel Booking Form</h1>
+        </header>
         <form action="confirmation.html" method="post">
-          <label for="guestName">Please enter your Name:</label>
-          <input type="text" id="guestName" name="guestName" required />
+          <label for="guestName" id="guestname">
+            Please enter your Name:
+          </label>
+          <input
+            type="text"
+            id="guestName"
+            name="guestName"
+            placeholder="Enter your Name"
+            required
+          />
 
           <label for="checkInDate">Check-in Date:</label>
           <input type="date" id="checkInDate" name="checkInDate" required />
@@ -44,19 +52,22 @@ function Confirm() {
             id="numGuests"
             name="numGuests"
             min="1"
+            placeholder="Please enter the number of person/guests"
             required
           />
-
-          <button type="submit">Submit</button>
+          <label for="additionalthings">Any additional things needed</label>
+          <input
+            type="text"
+            name="additional"
+            id="addition"
+            placeholder="Extra bed,blankets etc"
+          />
+          <button type="submit" id="buttonSubmit">
+            Submit
+          </button>
         </form>
       </section>
-
-      <footer>
-        <p>
-          &copy; RoamRelax | <a href="index.html">Terms and Conditions</a> |{" "}
-          <a href="index.html">Privacy Policy</a>
-        </p>
-      </footer>
+      <Footer />
     </>
   );
 }

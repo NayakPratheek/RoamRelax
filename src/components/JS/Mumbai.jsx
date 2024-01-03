@@ -1,6 +1,12 @@
 import "../CSS/Locs.css";
+import Confirm from "../JS/Confirm.jsx";
+import { Routes, Route, Link, useNavigate } from "react-router-dom";
 
 function Mumbai() {
+  const navigate = useNavigate();
+  function redirectToPage(page) {
+    navigate(`/confirm`);
+  }
   return (
     <>
       <div class="flex-container">
@@ -40,7 +46,12 @@ function Mumbai() {
                 </span>
               </div>
             </div>
-            <button className="button">BOOK NOW</button>
+            <button
+              className="button"
+              onClick={() => redirectToPage("confirm")}
+            >
+              Book Now
+            </button>
           </div>
         </div>
 
@@ -80,9 +91,12 @@ function Mumbai() {
                 </span>
               </div>
             </div>
-            <a href="/public/confirm.html" class="button">
-              BOOK NOW
-            </a>
+            <button
+              className="button"
+              onClick={() => redirectToPage("confirm")}
+            >
+              Book Now
+            </button>
           </div>
         </div>
         <div class="card">
@@ -121,9 +135,12 @@ function Mumbai() {
                 </span>
               </div>
             </div>
-            <a href="/public/confirm.html" class="button">
-              BOOK NOW
-            </a>
+            <button
+              className="button"
+              onClick={() => redirectToPage("confirm")}
+            >
+              Book Now
+            </button>
           </div>
         </div>
         <div class="card">
@@ -162,9 +179,12 @@ function Mumbai() {
                 </span>
               </div>
             </div>
-            <a href="/public/" class="button">
-              BOOK NOW
-            </a>
+            <button
+              className="button"
+              onClick={() => redirectToPage("confirm")}
+            >
+              Book Now
+            </button>
           </div>
         </div>
 
@@ -204,9 +224,12 @@ function Mumbai() {
                 </span>
               </div>
             </div>
-            <a href="/public/confirm.html" class="button">
-              BOOK NOW
-            </a>
+            <button
+              className="button"
+              onClick={() => redirectToPage("confirm")}
+            >
+              Book Now
+            </button>
           </div>
         </div>
         <div class="card">
@@ -245,9 +268,12 @@ function Mumbai() {
                 </span>
               </div>
             </div>
-            <a href="/public/confirm.html" class="button">
-              BOOK NOW
-            </a>
+            <button
+              className="button"
+              onClick={() => redirectToPage("confirm")}
+            >
+              Book Now
+            </button>
           </div>
         </div>
         <div class="card">
@@ -286,9 +312,12 @@ function Mumbai() {
                 </span>
               </div>
             </div>
-            <a href="/public/" class="button">
-              BOOK NOW
-            </a>
+            <button
+              className="button"
+              onClick={() => redirectToPage("confirm")}
+            >
+              Book Now
+            </button>
           </div>
         </div>
 
@@ -328,9 +357,12 @@ function Mumbai() {
                 </span>
               </div>
             </div>
-            <a href="/public/confirm.html" class="button">
-              BOOK NOW
-            </a>
+            <button
+              className="button"
+              onClick={() => redirectToPage("confirm")}
+            >
+              Book Now
+            </button>
           </div>
         </div>
         <div class="card">
@@ -369,11 +401,17 @@ function Mumbai() {
                 </span>
               </div>
             </div>
-            <a href="/public/confirm.html" class="button">
-              BOOK NOW
-            </a>
+            <button
+              className="button"
+              onClick={() => redirectToPage("confirm")}
+            >
+              Book Now
+            </button>
           </div>
         </div>
+        <Routes>
+          <Route path="/confirm" element={<Confirm />} />
+        </Routes>
       </div>
     </>
   );
